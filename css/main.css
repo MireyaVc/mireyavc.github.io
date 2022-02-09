@@ -1237,15 +1237,15 @@ input[type=text],
 }
 
 .skills-second-style .skill-container.skill-1 .skill-percentage {
-    width: 95%
+    width: 100%
 }
 
 .skills-second-style .skill-container.skill-2 .skill-percentage {
-    width: 65%
+    width: 90%
 }
 
 .skills-second-style .skill-container.skill-3 .skill-percentage {
-    width: 80%
+    width: 85%
 }
 
 .skills-second-style .skill-container.skill-4 .skill-percentage {
@@ -1253,23 +1253,23 @@ input[type=text],
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-    width: 95%
+    width: 65%
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-    width: 85%
-}
-
-.skills-second-style .skill-container.skill-7 .skill-percentage {
-    width: 100%
-}
-
-.skills-second-style .skill-container.skill-8 .skill-percentage {
     width: 75%
 }
 
+.skills-second-style .skill-container.skill-7 .skill-percentage {
+    width: 50%
+}
+
+.skills-second-style .skill-container.skill-8 .skill-percentage {
+    width: 65%
+}
+
 .skills-second-style .skill-container.skill-9 .skill-percentage {
-    width: 90%
+    width: 85%
 }
 
 .pt-page .skills-second-style .skill-percentage,
@@ -1295,12 +1295,24 @@ input[type=text],
 
 .knowledges li {
     display: inline-block;
+    user-select: none;
+    cursor: pointer;
     background-color: #5050f5;
     border-radius: 3px;
     color: #fff;
     padding: 1px 10px;
     margin: 3px 2px;
-    font-size: 13px
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.knowledges li:hover{
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -webkit-box-shadow: 0px 2px 17px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 17px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 17px -3px rgba(0,0,0,0.75);
 }
 
 .certificate-item {
@@ -1331,7 +1343,7 @@ input[type=text],
 
 .certi-logo img {
     display: block;
-    max-width: 100%
+    max-width: 100%;
 }
 
 .certi-content {
